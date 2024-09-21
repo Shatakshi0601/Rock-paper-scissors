@@ -32,18 +32,23 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice === "rock" && computerChoice ==="scissors" || 
         humanChoice === "paper" && computerChoice ==="rock" || 
         humanChoice === "scissors" && computerChoice ==="paper") {
-        humanScore++;    
+        humanScore++;  
     
     } else if (humanChoice === "rock" && computerChoice ==="paper" || 
         humanChoice === "paper" && computerChoice ==="scissors" || 
         humanChoice === "scissors" && computerChoice ==="rock") {
         computerChoice++;
+        
 
     } else if (humanChoice === "rock" && computerChoice ==="rock" || 
         humanChoice === "paper" && computerChoice ==="paper" || 
         humanChoice === "scissors" && computerChoice ==="scissors") {
-        computerChoice++
-        }
+        alert("It's a tie!!");
+
+    } else {
+        alert("Game Over");
+    }
+    
 console.log(humanScore);
 console.log(computerScore);
 
@@ -52,7 +57,7 @@ round++;
     if (round<5) { 
         getSelect();
     } else {
-        alert("Game Over")    
+        alert("Game Over");    
     }
 }    
 

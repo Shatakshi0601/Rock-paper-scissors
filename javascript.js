@@ -8,5 +8,6 @@ function getComputerChoice() {
            return("scissors");
 
      }  
-     console.log(randomNumber) 
+    
 } 
+console.log(randomNumber) 

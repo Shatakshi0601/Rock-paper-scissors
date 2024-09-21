@@ -32,12 +32,14 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice === "rock" && computerChoice ==="scissors" || 
         humanChoice === "paper" && computerChoice ==="rock" || 
         humanChoice === "scissors" && computerChoice ==="paper") {
-        humanScore++;  
+        humanScore++;
+        alert("You Won")  
     
     } else if (humanChoice === "rock" && computerChoice ==="paper" || 
         humanChoice === "paper" && computerChoice ==="scissors" || 
         humanChoice === "scissors" && computerChoice ==="rock") {
         computerChoice++;
+        alert("You Lost")
         
 
     } else if (humanChoice === "rock" && computerChoice ==="rock" || 
@@ -48,7 +50,7 @@ function playRound(humanChoice, computerChoice) {
     } else {
         alert("Game Over");
     }
-    
+
 console.log(humanScore);
 console.log(computerScore);
 

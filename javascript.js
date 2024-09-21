@@ -33,13 +33,13 @@ function playRound(humanChoice, computerChoice) {
         humanChoice === "paper" && computerChoice ==="rock" || 
         humanChoice === "scissors" && computerChoice ==="paper") {
         humanScore++;
-        alert("You Won")  
+        alert("You Won");  
     
     } else if (humanChoice === "rock" && computerChoice ==="paper" || 
         humanChoice === "paper" && computerChoice ==="scissors" || 
         humanChoice === "scissors" && computerChoice ==="rock") {
         computerChoice++;
-        alert("You Lost")
+        alert("You Lost");
         
 
     } else if (humanChoice === "rock" && computerChoice ==="rock" || 

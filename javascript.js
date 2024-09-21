@@ -33,7 +33,7 @@ function playRound(humanChoice, computerChoice) {
         humanChoice === "paper" && computerChoice ==="rock" || 
         humanChoice === "scissors" && computerChoice ==="paper") {
         humanScore++;
-        alert("You Won" , humanScore ,"|" ,computerScore )  
+        alert("You Won")  
     
     } else if (humanChoice === "rock" && computerChoice ==="paper" || 
         humanChoice === "paper" && computerChoice ==="scissors" || 

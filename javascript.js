@@ -72,4 +72,4 @@ playRound(humanSelection, computerSelection);
 getSelect();
 
 }
-
+playGame();

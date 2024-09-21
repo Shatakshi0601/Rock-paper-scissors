@@ -22,6 +22,8 @@ function getHumanChoice() {
         } 
 }
 
+function playGame() {
+
 let humanScore=0
 let computerScore=0
 
@@ -30,25 +32,37 @@ function playRound(humanChoice, computerChoice) {
         humanChoice === "paper" && computerChoice ==="rock" || 
         humanChoice === "scissors" && computerChoice ==="paper") {
         humanScore++;    
-    }
     
-    if (humanChoice === "rock" && computerChoice ==="paper") {
-    } else if (humanChoice === "paper" && computerChoice ==="scissors") {
-    } else if (humanChoice === "scissors" && computerChoice ==="rock") {
+    } else if (humanChoice === "rock" && computerChoice ==="paper" || 
+        humanChoice === "paper" && computerChoice ==="scissors" || 
+        humanChoice === "scissors" && computerChoice ==="rock") {
+        computerChoice++;
+
+    } else if (humanChoice === "rock" && computerChoice ==="rock" || 
+        humanChoice === "paper" && computerChoice ==="paper" || 
+        humanChoice === "scissors" && computerChoice ==="scissors") {
+        computerChoice++
+        }
+console.log(humanScore);
+console.log(computerScore);
+
+round++;
+
+    if (round<5) { 
+        getSelect();
+    } else {
+        alert("Game Over")    
     }
-    computerChoice++
+}    
 
-
-
-}
-
-  
+function getSelect() {
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
   
 playRound(humanSelection, computerSelection);
-  
+} 
 
+getSelect();
+}
 
-
-
+playGame();

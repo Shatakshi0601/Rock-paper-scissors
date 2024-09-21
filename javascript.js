@@ -10,4 +10,3 @@ function getComputerChoice() {
      }  
     
 } 
-console.log(randomNumber) 

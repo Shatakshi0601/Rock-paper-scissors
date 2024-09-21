@@ -21,9 +21,8 @@ function getHumanChoice() {
  }  else {
         alert("Incorrect value");
  }
-
-console.log(getHumanChoice())
 }
+console.log(getHumanChoice());
 
 
 

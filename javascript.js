@@ -26,6 +26,7 @@ function playGame() {
 
 let humanScore=0
 let computerScore=0
+let round=0
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === "rock" && computerChoice ==="scissors" || 

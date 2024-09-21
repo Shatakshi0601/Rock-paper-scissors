@@ -20,7 +20,9 @@ function getHumanChoice() {
         return("scissors");
  }  else {
         alert("Incorrect value");
- }  
+ }
+
+console.log(getHumanChoice())
 }
 
 

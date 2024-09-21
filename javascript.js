@@ -69,6 +69,7 @@ const computerSelection = getComputerChoice();
   
 playRound(humanSelection, computerSelection);
 } 
+getSelect();
 
 }
-playGame();
+

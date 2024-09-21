@@ -71,3 +71,4 @@ playRound(humanSelection, computerSelection);
 } 
 
 }
+playGame();

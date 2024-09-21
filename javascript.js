@@ -22,6 +22,32 @@ function getHumanChoice() {
         } 
 }
 
+let humanScore=0
+let computerScore=0
+
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice === "rock" && computerChoice ==="scissors" || 
+        humanChoice === "paper" && computerChoice ==="rock" || 
+        humanChoice === "scissors" && computerChoice ==="paper") {
+        humanScore++;    
+    }
+    
+    if (humanChoice === "rock" && computerChoice ==="paper") {
+    } else if (humanChoice === "paper" && computerChoice ==="scissors") {
+    } else if (humanChoice === "scissors" && computerChoice ==="rock") {
+    }
+    computerChoice++
+
+
+
+}
+
+  
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+  
+playRound(humanSelection, computerSelection);
+  
 
 
 

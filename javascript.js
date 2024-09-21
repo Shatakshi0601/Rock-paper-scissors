@@ -12,15 +12,15 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     let choice= prompt("Choose Rock, Paper or Scissors");
-    if (choice.toLowerCase() === "rock") {
-        return("rock");
- }  else if (choice.toLowerCase() === "paper") {
-        return("paper");
- }  else if (choice.toLowerCase() === "scissors"){
-        return("scissors");
- }  else {
-        alert("Incorrect value");
- }
+        if (choice.toLowerCase() === "rock") {
+            return("rock");
+        } else if (choice.toLowerCase() === "paper") {
+            return("paper");
+        } else if (choice.toLowerCase() === "scissors"){
+            return("scissors");
+        } else {
+            alert("Incorrect value");
+        } 
 }
 console.log(getHumanChoice());
 

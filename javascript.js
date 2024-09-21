@@ -58,8 +58,8 @@ round++;
 
     if (round<5) { 
         getSelect();
-    } else 
-        alert("Game Over" ,'humanScore','computerScore');    
+    } else {
+        alert("Game Over");    
     }
 }    
 
